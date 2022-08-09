@@ -8,17 +8,17 @@ deviceType[0].addEventListener('touchstart', ()=>{
     deviceType[0].classList.add("smart");
     // ev();
 });
-deviceType[0].addEventListener('touchmove', ()=>{
-    deviceType[0].classList.add("smart");
-    // ev();
-});
+// deviceType[0].addEventListener('touchmove', ()=>{
+//     deviceType[0].classList.add("smart");
+//     // ev();
+// });
 deviceType[0].addEventListener('touchend', ()=>{
     deviceType[0].classList.remove("smart");
 });
-deviceType[0].addEventListener('touchstart', (event)=>{console.log(event)}
-);
-deviceType[0].addEventListener('touchcancel', (event)=>{console.log(event)}
-);
+// deviceType[0].addEventListener('touchstart', (event)=>{console.log(event)}
+// );
+// deviceType[0].addEventListener('touchcancel', (event)=>{console.log(event)}
+// );
 
 deviceType[1].addEventListener('touchstart', ()=>{
     deviceType[1].classList.add("smart");
