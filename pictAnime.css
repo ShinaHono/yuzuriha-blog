@@ -7,17 +7,13 @@
 	text-indent: 1em;
 	font-weight: bolder;
   }
-.title{
+.pictTitle{
 	-ms-writing-mode: tb-rl;
 	writing-mode: vertical-rl;
 	padding: 30px;
   }
 p span {
 	font-size: 3rem;
-}
-
-#box2, #box3 {
-	color: white;
 }
 
 .white {
