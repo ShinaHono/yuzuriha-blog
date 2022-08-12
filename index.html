@@ -16,8 +16,49 @@
     <br><br><br><hr>
     <nav>
     </nav>
-    <br><br><br><br>
-    <main>
+    <main> 
+        <h3 id="news">ニュースブログはこちらから</h3>
+        <img src="./img/drop-down-arrow.png" alt="dropDownIcon" class="dropDown" id="dropDown" onclick="toggle('news-blog')">
+        <img src="./img/rise-up-arrow.png" alt="riseUpIcon" class="riseUpHidden" id="riseUp" onclick="toggle('news-blog')">
+          <article class="news-blog-closed" id="news-blog">
+            <h2>ニュースブログ</h2>
+          <br><br><br><br>
+           <section>
+            <span>
+                <article class="content">
+                    <figure class="pc">
+                        <a href="./news-blog01.html"><img class="logo" src="./img/readinComittee.jpg" alt="picture">
+                        </a>
+                        <legend>「〜第五回　平和を願い、実現するための集い〜」<br>に参加してみた</legend>
+                    </figure>
+                </article>
+                <article class="content">
+                    <figure class="pc">
+                        <a href=#><img class="logo" src="./img/childhood.jpg" alt="picture">
+                        </a>
+                        <legend>今後掲載予定</legend>                        
+                    </figure>
+                </article>
+            </span>
+            <span>
+                <article class="content">
+                    <figure class="pc">
+                        <a href=#><img class="logo" src="./img/workingPerson.jpg" alt="picture">
+                        </a>
+                        <legend>今後掲載予定</legend>                        
+                    </figure>
+                </article>
+                <article class="content">
+                    <figure class="pc">
+                        <a href=#><img class="logo" src="./img/goForDream.jpg" alt="picture">
+                        </a>
+                        <legend>今後掲載予定</legend>                        
+                    </figure>
+                </article>
+            </span>
+           </section>
+          </article>
+          <br><br><br><hr>
           <article class="mainContents">
             <h2>いつもの日常が続くと思っていた</h2>
           <br><br><br><br>
@@ -90,6 +131,48 @@
              </span>
            </section>
           </article>
+          <br><br><br><hr>
+          <h3 id="contentReport">朗読劇、戦争参考動画などコンテンツはこちらから</h3>
+        <img src="./img/drop-down-arrow.png" alt="dropDownIcon" class="dropDown" id="dropDown02" onclick="toggle02('content')">
+        <img src="./img/rise-up-arrow.png" alt="riseUpIcon" class="riseUpHidden" id="riseUp02" onclick="toggle02('content')">
+          <article class="content-blog-closed" id="content">
+            <h2>コンテンツ</h2>
+          <br><br><br><br>
+           <section>
+            <span>
+                <article class="content">
+                    <figure class="pc">
+                        <a href="./news-blog01.html"><img class="logo" src="./img/readinComittee.jpg" alt="picture">
+                        </a>
+                        <legend>「〜第五回　平和を願い、実現するための集い〜」<br>に参加してみた</legend>
+                    </figure>
+                </article>
+                <article class="content">
+                    <figure class="pc">
+                        <a href=#><img class="logo" src="./img/childhood.jpg" alt="picture">
+                        </a>
+                        <legend>今後掲載予定</legend>                        
+                    </figure>
+                </article>
+            </span>
+            <span>
+                <article class="content">
+                    <figure class="pc">
+                        <a href=#><img class="logo" src="./img/workingPerson.jpg" alt="picture">
+                        </a>
+                        <legend>今後掲載予定</legend>                        
+                    </figure>
+                </article>
+                <article class="content">
+                    <figure class="pc">
+                        <a href=#><img class="logo" src="./img/goForDream.jpg" alt="picture">
+                        </a>
+                        <legend>今後掲載予定</legend>                        
+                    </figure>
+                </article>
+            </span>
+           </section>
+          </article>
     </main>
     </div>
     <br><br><hr><br><br>
@@ -97,5 +180,66 @@
         <div>画像はイメージです</div>
     </footer>
     <script type="text/javascript" src="./style.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+     function toggle($id){
+        const className = document.getElementById($id).classList.contains("news-blog-closed");
+        if(className){
+                //ニュース
+                console.log("classあった");
+                document.getElementById($id).classList.remove("news-blog-closed");
+                document.getElementById($id).classList.add('news-blog-visible');
+
+                document.getElementById('dropDown').classList.remove('dropDown');
+                document.getElementById('dropDown').classList.add('dropDownHidden');
+                document.getElementById('riseUp').classList.remove("riseUpHidden");
+                document.getElementById('riseUp').classList.add('riseUp');
+
+                document.getElementById('news').classList.add('hidden');
+            } else {
+                //ニュース
+                document.getElementById($id).classList.add("news-blog-closed");
+                document.getElementById($id).classList.remove('news-blog-visible');
+                console.log("classなし");
+
+                document.getElementById('dropDown').classList.add("dropDown");
+                document.getElementById('dropDown').classList.remove('dropDownHidden');
+                document.getElementById('riseUp').classList.add("riseUpHidden");
+                document.getElementById('riseUp').classList.remove('riseUp');
+
+                document.getElementById('news').classList.remove('hidden');
+            }
+     }
+
+     function toggle02($id){
+        const className02 = document.getElementById($id).classList.contains("content-blog-closed");
+        console.log($id);
+            if(className02){
+                //コンテンツ
+                console.log("classあった");
+                document.getElementById($id).classList.remove("content-blog-closed");
+                document.getElementById($id).classList.add('content-blog-visible');
+
+                document.getElementById('dropDown02').classList.remove('dropDown');
+                document.getElementById('dropDown02').classList.add('dropDownHidden');
+                document.getElementById('riseUp02').classList.remove("riseUpHidden");
+                document.getElementById('riseUp02').classList.add('riseUp');
+
+                document.getElementById('contentReport').classList.add('hidden');
+            } else {
+                //コンテンツ
+                document.getElementById($id).classList.add("content-blog-closed");
+                document.getElementById($id).classList.remove('content-blog-visible');
+
+                console.log(document.getElementById('dropDown02'), document.getElementById('dropDown'));
+                document.getElementById('dropDown02').classList.add("dropDown");
+                document.getElementById('dropDown02').classList.remove('dropDownHidden');
+                document.getElementById('riseUp02').classList.add("riseUpHidden");
+                document.getElementById('riseUp02').classList.remove('riseUp');
+
+                document.getElementById('contentReport').classList.remove('hidden');
+            }
+     }
+     </script> 
 </body>
 </html>

@@ -1,3 +1,14 @@
+// function dropDown () {
+    //document.getElementById("news-blog").tagg
+
+    // $(function() {
+    //     $("#news-blog").click(function() {
+    //       // cssで背景色を切り替え
+    //       $(".news-blog").toggleClass(".news-blog-visible");
+    //     });
+    //  });
+//}
+
 const deviceType = document.getElementsByClassName("pc");
 
 //将来的にはindexOfで()タッチした配列のインデックスを取得してそっからアドイベントリスナーできる様にしたい
