@@ -5,9 +5,64 @@ header img {
 header h1,h2{
     text-align: center;
 }
+.logo:hover{
+    scale: 1.2;
+    opacity: 0.7;
+}
 .wrapper {
     text-align: center;
 }
+main article {
+    overflow-x: scroll;
+}
+.hidden{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.dropDown {
+    width: 5%;
+    visibility: visible;
+}
+.dropDownHidden {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.riseUpHidden {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.riseUp{
+    visibility: visible;
+    width: 5%;
+    height: auto;
+}
+
+
+.news-blog-closed{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.news-blog-visible {
+    visibility: visible;
+    width: auto;
+    height: auto;
+}
+
+.content-blog-closed{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.content-blog-visible {
+    visibility: visible;
+    width: auto;
+    height: auto;
+}
+
 section{
     position: relative;
     display: flex;
@@ -67,6 +122,9 @@ footer {
         animation-duration: ; */
         transform: scale(1.1);
         opacity: 0.5;
+    }
+    .dropDown {
+        width: 10%;
     }
     /* @keyframes pictAnime {
         0%{

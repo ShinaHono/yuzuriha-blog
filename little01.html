@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel= "stylesheet" type="text/css" href="./style.css">
-    <title>Document</title>
+    <title>ゆずり葉ポータル　戦争体験記録サイト</title>
     <style>
         /* main {
             text-align: center;
@@ -37,10 +37,13 @@
           <h2>守屋隆弘さん　市民、男性</h2>
           <img src="./img/littlechild.jpg" width="80%">
           <br><br><hr><br><br>
+          <button onclick="readAloud()">読み上げる</button>
           <p>４歳の時、神戸市で空襲に遭いました。（１９４５年・昭和２０年）
             家の畳の上で、竹筒のような焼夷（い）弾が何本も花火のように火を吹いている光景を鮮明に覚えています。
             </p>
+            <p><img src="./img/littlechild.jpg" width="60%"></p>
           <p>母が弟と私の手を引いて、近くの高射砲陣地に逃げました。切れた市電の架線が地面に接触して火花を散らしていました。たくさんの人が逃げて来ていました。サーチライトが時々Ｂ２９の銀色の機体をとらえます。兵隊がＢ２９に向かって高射砲を撃ちます。しかし全てが届かず、弧を描いて落ちてきました。</p>
+            <p><img src="./img/littlechild.jpg" width="60%"></p>
           <p>父はビルマで戦死し、弟も栄養失調で死にました。母は戦争未亡人として苦労に苦労を重ねながら私を育て、戦後を生き抜いてきました。
             私は６９歳、母は９１歳になりました。
             </p>
@@ -58,5 +61,18 @@
         <div>画像はイメージです</div>
     </footer>
     <script type="text/javascript" src="./style.js"></script>
+    <script>
+        function readAloud() {
+          if ('speechSynthesis' in window) {
+            // 発言を設定
+            const uttr = new SpeechSynthesisUtterance()
+            uttr.text = "これはデモ版のサイトです。 語部の方や伝承者の方のメッセージや記事の音読の録音などをいただけた場合、 このボタンを押すとその音声を流すことを考えています";
+            // 発言を再生
+            window.speechSynthesis.speak(uttr)
+          } else {
+            alert('大変申し訳ありません。このブラウザは音声合成に対応していません。')
+          }
+        }
+    </script>
 </body>
 </html>
