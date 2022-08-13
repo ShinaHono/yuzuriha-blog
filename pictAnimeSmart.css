@@ -29,10 +29,11 @@ p span {
 }
 
 #box1 {
-    background: url('./img/war01.png') center/ cover;
+    background: url('./img/war01.png') center/ cover no-repeat;
+    background-size: 60%;
+    background-position: left;
 	width: 100%;
 	height: fit-content;
-	
 }
 h1{
 	font-size: 2.5em;
@@ -42,22 +43,25 @@ h3{
 	text-align: center;
 }
 #box2 {
-    background: url('./img/war02.png') center/ cover;
-	width: 100%;
+    background: url('./img/war02.png') center/ cover no-repeat;
+    background-size: 60%;
+    background-position: left;
 	height: fit-content; /*ここでMAX100vhにしてるから子要素の合計を100vhにしないと飛び出すお*/
 	
 }
 
 #box3 {
-    background: url('./img/war03.png') center/ cover;
-	width: 100%;
+    background: url('./img/war03.png') center/ cover no-repeat;
+    background-size: 60%;
+    background-position: left;
 	height: fit-content; /*ここでMAX100vhにしてるから子要素の合計を100vhにしないと飛び出すお*/
 	
 }
 
 #box4 {
-    background: url('./img/war04.png') center/ cover;
-	width: 100%;
+    background: url('./img/war04.png') center/ cover no-repeat;
+    background-size: 60%;
+    background-position: left;
 	height: fit-content;
 	
 }
