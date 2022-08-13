@@ -30,7 +30,7 @@ p span {
 
 #box1 {
     background: url('./img/war01.png') center/ cover no-repeat;
-    background-size: 60%;
+    background-size: 70%;
     background-position: left;
 	width: 100%;
 	height: fit-content;
@@ -44,7 +44,7 @@ h3{
 }
 #box2 {
     background: url('./img/war02.png') center/ cover no-repeat;
-    background-size: 60%;
+    background-size: 70%;
     background-position: left;
 	height: fit-content; /*ここでMAX100vhにしてるから子要素の合計を100vhにしないと飛び出すお*/
 	
@@ -52,7 +52,7 @@ h3{
 
 #box3 {
     background: url('./img/war03.png') center/ cover no-repeat;
-    background-size: 60%;
+    background-size: 70%;
     background-position: left;
 	height: fit-content; /*ここでMAX100vhにしてるから子要素の合計を100vhにしないと飛び出すお*/
 	
@@ -60,7 +60,7 @@ h3{
 
 #box4 {
     background: url('./img/war04.png') center/ cover no-repeat;
-    background-size: 60%;
+    background-size: 70%;
     background-position: left;
 	height: fit-content;
 	
